@@ -2,6 +2,8 @@
 #include <cstdlib>
 using namespace std;
 
+//HOLA
+
 const int TAMMAX=10;
 
 void llenarM(int f, int c, int mat[TAMMAX][TAMMAX]){
@@ -12,6 +14,7 @@ void llenarM(int f, int c, int mat[TAMMAX][TAMMAX]){
  }
 }
 
+//FUNCION PARA IMPRIMIR
 void imprimir(int f, int c, int mat[TAMMAX][TAMMAX]){
  for(int i=0;i<f;i++){
   for(int j=0;j<c;j++){
@@ -22,6 +25,7 @@ void imprimir(int f, int c, int mat[TAMMAX][TAMMAX]){
  cout<<"----------"<<endl;
 }
 
+//FUNCION ELIMINAR
 void feliminar(int mat[TAMMAX][TAMMAX], int fpiv, int fmode, int coef, int f, int c){
  for(int i=0;i<c;i++){
     mat[fmode][i]=mat[fmode][i] - coef*mat[fpiv][i];
